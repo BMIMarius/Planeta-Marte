@@ -1,17 +1,273 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
-	background-color: red;
+	background: url(https://www.idevice.ro/wp-content/uploads/2019/08/Planeta-Marte.-Noi-Poze-INCREDIBILE-au-UIMIT-Intreaga-OMENIRE.jpg)no-repeat 100% center/cover;
+	margin: 0;
+	font-family: 'Merienda', cursive;
 }
 
-.header {
-	width: 100%;
-	height: 200px;
-	background: white;
-	margin-bottom: 10rem;
+.head, .general-head {
+	margin: 0 auto 1rem;
 }
 
-.header-text, h1 {
+.head {
+	background: url(https://www.cotidianul.ro/wp-content/uploads/2019/06/03/curiosity-explorare-marte-nasa-1000x600.jpg)no-repeat 30% center/cover;
 	text-align: center;
-	background: blue;
+	width: 100%;
+	height: 50vh;
+	border-bottom: 1px solid white;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.text-h1, h1 {
+	background: hsla(0,0%,0%,0.4);
+	width: 100%;
+	height: 10vh;
+	border-bottom: 1px solid white;
+	padding: 2.5rem;
+	position: fixed;
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+}
+
+
+.head, h1 {
+	color: white;
+	font-size: 1.5rem;
+}
+
+
+
+.general-head  {
+	width: 99.2%;
+	background: hsla(28, 100%, 17%,0.4);
+	font-size: 1.5vw;
+	font-weight: 900;
+	letter-spacing: 1px;
+	padding: 2rem;
+	margin: .1rem;
+	border: 2px solid white;
+	border-radius: 80px;
+}
+
+.head2 h2 {
+   width: 30%;
+   height: 30%;
+   background: hsla(26, 78%, 44%,0.1);
+   color: white;
+   text-align: center;
+   float: right;
+   font-size: 2.5vw;
+   margin: 5px;
+   padding: 5px;
+   border-radius: 10px;
+   border: 1px solid white;
+}
+
+.head3 h2 {
+	background: hsla(26, 78%, 44%,0.1);
+	width: 30%;
+	float: left;
+	height: 30%;
+	font-size: 2.5vw;
+	color: white;
+	padding: 5px;
+	border-radius: 10px;
+	margin: 5px;
+	text-align: center;
+	border: 1px solid white;
+}
+
+.head4 h2 {
+	background: hsla(26, 78%, 44%,0.1);
+	width: 30%;
+	height: 30%;
+	margin: auto;
+	font-size: 2.5vw;
+	color: white;
+	padding: 5px;
+	border-radius: 10px;
+	margin-top: 5px;
+	text-align: center;
+	border: 1px solid white;
+}
+
+.about {
+	width:99%;
+	padding: 2rem;
+	background: gree;
+	margin: 0 auto 1rem;
+	border: 3px solid white;
+	border-radius: 2rem;
+}
+
+.about2 h2 {
+	text-align: center;
+	margin-bottom: 1rem;
+	color: white;
+}
+
+.about2 h2::after {
+	content:"";
+	display: block;
+	width: 40%;
+	height: 1px;
+	background: white;
+	margin: auto;
+	margin-top: 1rem;
+}
+
+.about2 p {
+	text-align: center;
+	margin-bottom: 1rem;
+	background: blu;
+	color: white;
+	line-height: normal;
+}
+
+.about2 a {
+	background: re;
+	  display: inline-block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+}
+
+.about2 a::after,
+.about2 a::before {
+	content: "";
+	display: inline-block;
+	width: 1rem;
+	height: 0.1rem;
+	background: white;
+	vertical-align: middle;
+	margin: 1rem;
+}
+
+.about2 a:hover {
+	color: brown;
+}
+
+.about2 a {
+    cursor:pointer;
+
+}
+
+.footer {
+	width: 100%;
+	height: 10%;
+	background: hsla(26, 78%, 44%,0.1);
+	text-align: center;
+	padding: 1rem;
+	border-top: 3px solid white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.footer1 {
+	background: re;
+	margin-top: 30px;
+	width: 100%;
+	height: 5vh;
+}
+
+.footer a i {
+	color: #582900;
+}
+
+.footer1 a i:hover {
+	color: white;
+}
+
+
+@media (min-width: 768px) {
+	.head2 h2, .head3 h2,
+	.head4 h2 {
+		font-size: 0.875em;
+		font-weight: 900;
+		letter-spacing: 1px;
+		color: white;
+	}
+
+	.head {
+		background: url(https://www.cotidianul.ro/wp-content/uploads/2019/06/03/curiosity-explorare-marte-nasa-1000x600.jpg)no-repeat 70% center/cover;
+		width: 100%;
+		height: 100vh;
+}
+
+.about {
+	display: inline-block;
+    width: 99.8%;
+    padding: 2rem;
+    background: gree;
+    border: 2px solid white;
+    border-radius: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about2 {
+	 width: 48%;
+   background: hsla(26, 78%, 44%,0.1);
+   color: white;
+   text-align: center;
+   float: righ;
+   font-size: 0.5vw;
+   margin: auto;
+   padding: 2rem;
+   border-radius: 10px;
+   border: 1px solid white;
+}
+
+.about h2 {
+	background: re;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	font-size: 1rem;
+}
+.about2 h2::after {
+	content: "";
+	display: block;
+	width: 30%;
+	height: 2px;
+	background: white;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.about2 p {
+	background: blu;
+	margin-top: 5rem;
+	font-size: 1.5vw;
+	line-height: 190%;
+	margin-bottom: 5rem;
+}
+
+.about2 a {
+	color: white;
+	font-size: 1vw;
+	background: re;
+}
+
+.about2 a:hover {
+	color: brown;
+}
+
+.footer {
+	width: 100%;
+	background: 
+}
+
+.footer1 i a {
 	width: 50%;
-	margin-top: 10rem;
+	height: 10px;
+	background: blac;
+}
+
 }
